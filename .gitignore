@@ -1,6 +1,13 @@
+# Web application specific data tracked on its own.
 www/
+
+# Local config secrets
 .env
 .env.*
+
+# Logs
 *.log
+
+# Local VScode container integration
 .devcontainer/*
 
