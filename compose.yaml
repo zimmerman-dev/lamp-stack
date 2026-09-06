@@ -1,0 +1,13 @@
+services:
+  lamp:
+    build: .
+    container_name: textbook-lamp
+    ports:
+      - "80:80"
+      - "127.0.0.1:3306:3306"
+    volumes:
+      - ./www:/var/www/html
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:

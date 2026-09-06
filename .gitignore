@@ -1,0 +1,6 @@
+www/
+.env
+.env.*
+*.log
+.devcontainer/*
+
