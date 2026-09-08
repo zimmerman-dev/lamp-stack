@@ -11,6 +11,10 @@ RUN apt-get update && apt-get install -y \
     php-curl \
     libapache2-mod-php \
     vim \
+    wget \
+    less \
+    curl \
+    tree \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
