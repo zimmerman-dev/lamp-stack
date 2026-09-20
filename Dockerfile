@@ -18,6 +18,9 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+RUN sed -i 's/^bind-address[[:space:]]*= 127.0.0.1/bind-address = 0.0.0.0/' \
+    /etc/mysql/mysql.conf.d/mysqld.cnf
+
 RUN sed -i 's/^display_errors = Off/display_errors = On/' \
     /etc/php/8.3/apache2/php.ini
 
