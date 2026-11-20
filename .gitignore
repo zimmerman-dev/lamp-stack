@@ -11,3 +11,5 @@ www/
 # Local VScode container integration
 .devcontainer/*
 
+# emacs
+.projectile
